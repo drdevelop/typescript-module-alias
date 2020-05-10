@@ -1,0 +1,27 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es5",
+      "es2015",
+      "es2017"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "~types/*": ["./types/*"],
+      "@test/*": ["./test/*"]
+    }
+  },
+  "include": [
+    "src/**/*/*",
+    "test/*"
+  ]
+}

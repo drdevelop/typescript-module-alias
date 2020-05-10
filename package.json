@@ -1,0 +1,40 @@
+{
+  "name": "typescript-module-alias",
+  "version": "1.0.0",
+  "description": "this is auto module alias import about typescript module",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dist": "tsc src/index.ts --outDir dist",
+    "release": "bash scripts/release.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^6.5.0",
+    "@types/lodash": "^4.14.150",
+    "@types/node": "^13.13.4",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "inquirer": "^7.1.0",
+    "lint-staged": "^10.2.2",
+    "lodash": "^4.17.15",
+    "ts-node": "^8.10.1"
+  },
+  "lint-staged": {
+    "*.ts": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
