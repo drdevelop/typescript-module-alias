@@ -36,8 +36,8 @@ class CompilerHost {
   getSourceFile(fileName: string, languageVersion: ts.ScriptTarget): any {
     const sourceText = ts.sys.readFile(fileName);
     let changedPathsSourceText;
-    logger.info('get source file', fileName);
     if (!fileName.includes('node_modules')) {
+      logger.info('get source file', fileName);
       // it can modify emit source text at this
       logger.log('source text', fileName, sourceText);
       // 只能在此处修改路径引用，不能直接修改source file ast的imports[0].text的路径，会导致虚拟树紊乱
