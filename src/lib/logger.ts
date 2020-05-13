@@ -24,6 +24,7 @@ function getColorLog(levelColor: any, args: any): string[] {
 
 const logger: Logger = {
   log(...args) {
+    if (0 < level) return;
     console.log(...args);
   },
   warn(...args) {
