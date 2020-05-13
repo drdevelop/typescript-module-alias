@@ -1,18 +1,11 @@
 {
   "name": "typescript-module-alias",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "this is module alias auto import about typescript module",
   "main": "index.js",
   "bin": {
     "typescript-module-alias": "bin/start"
   },
-  "keywords": [
-    "typescript",
-    "import",
-    "module",
-    "alias",
-    "compiler"
-  ],
   "directories": {
     "lib": "lib"
   },
@@ -47,6 +40,21 @@
     "jest": "^25.5.4",
     "ts-jest": "^25.5.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drdevelop/typescript-module-alias.git"
+  },
+  "keywords": [
+    "typescript",
+    "import",
+    "module",
+    "alias",
+    "compiler"
+  ],
+  "bugs": {
+    "url": "https://github.com/drdevelop/typescript-module-alias/issues"
+  },
+  "homepage": "https://github.com/drdevelop/typescript-module-alias#readme",
   "lint-staged": {
     "*.ts": "eslint"
   },
