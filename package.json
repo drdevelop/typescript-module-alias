@@ -13,6 +13,7 @@
     "dist": "tsc --outDir release --project tsconfig.json",
     "build": "ts-node scripts/build.ts",
     "release": "rm -rf release && bash scripts/release.sh",
+    "publish": "npm publish release",
     "test": "cross-env NODE_ENV=test jest"
   },
   "author": "",
