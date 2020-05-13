@@ -17,7 +17,9 @@ yarn add typescript-module-alias -dev
 ## Quickstart
 
 ### on command line
+```
 npx typescript-module-alias ./test/a.ts
+```
 
 ### package.json scripts
 ```
