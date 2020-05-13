@@ -1,11 +1,18 @@
 {
   "name": "typescript-module-alias",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this is module alias auto import about typescript module",
   "main": "index.js",
   "bin": {
     "typescript-module-alias": "bin/start"
   },
+  "keywords": [
+    "typescript",
+    "import",
+    "module",
+    "alias",
+    "compiler"
+  ],
   "directories": {
     "lib": "lib"
   },
