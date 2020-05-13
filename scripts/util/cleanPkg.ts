@@ -1,7 +1,7 @@
 import path from 'path';
 import { writeFile } from './fs-extra';
 
-const cleanFields = ['devDependencies', 'husky', 'lint-staged'];
+const cleanFields = ['scripts', 'devDependencies', 'husky', 'lint-staged'];
 
 async function cleanPkg(pkgInfo: any, root: string, nextVersion: string): Promise<void> {
   console.log('next version', nextVersion);
