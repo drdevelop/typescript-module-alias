@@ -60,5 +60,3 @@ npx typescript-module-alias ./test/a.ts
   console.log('module b run success !!!');
   export default 1;
 ```
-
-

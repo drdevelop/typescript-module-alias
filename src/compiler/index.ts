@@ -14,46 +14,44 @@ class Compiler {
 
   constructor(configOptions: ConfigOptions, pathHost: PathHost) {
     this.configOptions = configOptions;
-    this.compilerOptions = {
-      module: ts.ModuleKind.CommonJS,
-      moduleResolution: ts.ModuleResolutionKind.NodeJs,
-      allowSyntheticDefaultImports: true,
-      experimentalDecorators: true,
-      resolveJsonModule: true,
-      esModuleInterop: true,
-      noImplicitAny: true,
-      suppressImplicitAnyIndexErrors: true,
-      // lib: ['lib.es5.d.ts', 'lib.es2015.d.ts', 'lib.es2017.d.ts'], 这个会与getDefaultFileName冲突，去掉这个可以默认使用lib.d.ts
-      baseUrl: '/Users/cxd/Documents/my-lib/npm_lock2yarn',
-      paths: {
-        '~types/*': ['./typings/*'],
-        '@test/*': ['./test/*']
-      },
-      sourceMap: true,
-      inlineSourceMap: false,
-      inlineSources: true,
-      declaration: false,
-      noEmit: false,
-      outDir: '/Users/cxd/Documents/my-lib/npm_lock2yarn/ts-dist',
-      configFilePath: '/Users/cxd/Documents/my-lib/npm_lock2yarn/tsconfig.json',
-      target: 1,
-    };
-    // this.setCompilerOptions(configOptions.tsconfig.compilerOptions || {});
+    // this.compilerOptions = {
+    //   module: ts.ModuleKind.CommonJS,
+    //   moduleResolution: ts.ModuleResolutionKind.NodeJs,
+    //   allowSyntheticDefaultImports: true,
+    //   experimentalDecorators: true,
+    //   resolveJsonModule: true,
+    //   esModuleInterop: true,
+    //   noImplicitAny: true,
+    //   suppressImplicitAnyIndexErrors: true,
+    //   // lib: ['lib.es5.d.ts', 'lib.es2015.d.ts', 'lib.es2017.d.ts'], 这个会与getDefaultFileName冲突，去掉这个可以默认使用lib.d.ts
+    //   baseUrl: '',
+    //   paths: {
+    //     '~types/*': ['./typings/*'],
+    //     '@test/*': ['./test/*']
+    //   },
+    //   sourceMap: true,
+    //   inlineSourceMap: false,
+    //   inlineSources: true,
+    //   declaration: false,
+    //   noEmit: false,
+    //   outDir: '',
+    //   configFilePath: '',
+    //   target: 1,
+    // };
+    this.setCompilerOptions(configOptions.tsconfig.compilerOptions || {});
     this.pathHost = pathHost;
-    // this.pathHost = new PathHost({
-    //   baseUrl: this.compilerOptions.baseUrl,
-    //   paths: this.compilerOptions.paths,
-    // }, root);
     this.root = configOptions.config.root;
   }
 
   transformCompilerOptions(compilerOptions: any): any {
-    return {
+    const newCompilerOptions = {
       ...compilerOptions,
       module: ts.ModuleKind[toLowerCase(compilerOptions.module)],
       moduleResolution: ts.ModuleResolutionKind.NodeJs,
       target: ts.ScriptTarget[toLowerCase(compilerOptions.target)],
     }
+    delete newCompilerOptions.lib;
+    return newCompilerOptions;
   }
 
   setCompilerOptions(compilerOptions: any): void {
