@@ -30,7 +30,7 @@ compareIsNotTsFile() {
 RELEASE_DIR_LIST=();
 # copy dir file exclude *.ts
 RELEASE_DIR_LIST_EXCLUDE_TS=("../bin");
-RELEASE_FILE_LIST=("../index.js" "../package.json" "../README.md")
+RELEASE_FILE_LIST=("../package.json" "../README.md" "../CHANGELOG.md")
 
 if [ ! -d "../release" ]; then
 mkdir ../$RELEASE_DIR
@@ -63,7 +63,7 @@ done
 echo -e "\033[32mcp dir done\033[0m \n"
 
 # copy file list
-for fiel in ${RELEASE_FILE_LIST[@]}
+for file in ${RELEASE_FILE_LIST[@]}
 do
   cp $file ../$RELEASE_DIR
   echo -e "\033[34mcp file\033[0m: $file"
