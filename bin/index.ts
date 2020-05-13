@@ -14,4 +14,6 @@ if (program.dev) {
 } else if (program.build) {
   console.warn('build project is not supported temporarily');
   // runMain(sourceFiles);
+} else {
+  runMain(sourceFiles);
 }
