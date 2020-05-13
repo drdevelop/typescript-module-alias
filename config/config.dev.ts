@@ -1,5 +1,5 @@
 export default {
   logger: {
-    level: 'log'
+    level: 'warn'
   }
 }
