@@ -16,12 +16,7 @@
     ],
     "baseUrl": "./",
     "paths": {
-      "~types/*": ["./types/*"],
       "@test/*": ["./test/*"]
     }
-  },
-  "include": [
-    "bin",
-    "src"
-  ]
+  }
 }

@@ -22,11 +22,27 @@ npx typescript-module-alias ./test/a.ts
 ```
 
 ### package.json scripts
+#### development
 ```
   "scripts": {
     "dev": "typescript-module-alias ./test/a.ts"
   }
 ```
+
+#### production
+```
+  "scripts": {
+    "build": "typescript-module-alias-build ./test"
+  }
+```
+##### set dist dir
+> default the dist dir is 'dist'
+```
+  "scripts": {
+    "build": "typescript-module-alias-build ./test --out-dir release"
+  }
+```
+Finally, that will build to "release" dir
 
 ## Example
 - tsconfig.json
@@ -59,4 +75,14 @@ npx typescript-module-alias ./test/a.ts
 ```ts
   console.log('module b run success !!!');
   export default 1;
+```
+
+## Advanced use
+
+### Integration with nodemon
+> we can use the nodemon exec command to run our old lib script
+```
+  "scripts": {
+    "dev": "nodemon --exec typescript-module-alias ./src/a/index.ts"
+  },
 ```
