@@ -17,4 +17,9 @@ binDir=$(cd "$(dirname "$0")"; pwd)
 nodeModulesDir=$(dirname $binDir)
 babelConfigFilePath="${nodeModulesDir}/typescript-module-alias/babel.config.js"
 
-babel --extensions .ts,.js $entry --config-file $babelConfigFilePath --out-dir dist
+outDir=$3
+if [ ! $3 ];then
+  outDir="dist"
+fi
+
+babel --extensions .ts,.js $entry --config-file $babelConfigFilePath --out-dir $outDir

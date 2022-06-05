@@ -1,6 +1,6 @@
 {
   "name": "typescript-module-alias",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "this is module alias auto import about typescript module",
   "main": "index.js",
   "bin": {
@@ -12,8 +12,8 @@
     "build": "babel --extensions .ts,.js ./demo --out-dir dist",
     "test": "cross-env NODE_ENV=test jest"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "drdevelop",
+  "license": "MIT",
   "dependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.2",
