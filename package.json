@@ -8,6 +8,7 @@
     "typescript-module-alias-build": "bin/build.sh"
   },
   "scripts": {
+    "prepare": "husky install",
     "dev": "babel-node --extensions .ts,.js ./demo/a/index --config-file ./babel.config.js",
     "build": "babel --extensions .ts,.js ./demo --out-dir dist",
     "test": "cross-env NODE_ENV=test jest"
@@ -31,10 +32,10 @@
     "@typescript-eslint/parser": "^2.31.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
-    "husky": "^4.2.5",
+    "husky": "^8.0.1",
     "inquirer": "^7.1.0",
     "jest": "^25.5.4",
-    "lint-staged": "^10.2.2",
+    "lint-staged": "^13.0.0",
     "lodash": "^4.17.15",
     "ts-jest": "^25.5.1",
     "ts-node": "^8.10.1",
@@ -63,13 +64,5 @@
   "bugs": {
     "url": "https://github.com/drdevelop/typescript-module-alias/issues"
   },
-  "homepage": "https://github.com/drdevelop/typescript-module-alias#readme",
-  "lint-staged": {
-    "*.ts": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  "homepage": "https://github.com/drdevelop/typescript-module-alias#readme"
 }
