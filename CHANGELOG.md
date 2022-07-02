@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.0...v2.2.1) (2022-07-02)
+
+
+### Bug Fixes
+
+* happen error "Cannot read property 'option' of undefined" when executing the build command ([285a170](https://github.com/drdevelop/typescript-module-alias/commit/285a1703ff39d48dc0d7339f9aa40be59830b0be))
+
 ## [2.2.0](https://github.com/drdevelop/typescript-module-alias/compare/v1.0.2...v2.2.0) (2022-07-02)
 
 
