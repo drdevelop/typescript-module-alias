@@ -1651,10 +1651,10 @@ babel-jest@^25.5.1:
     graceful-fs "^4.2.4"
     slash "^3.0.0"
 
-babel-plugin-alias@^1.0.0-rc:
-  version "1.0.0-rc"
-  resolved "https://registry.npmjs.org/babel-plugin-alias/-/babel-plugin-alias-1.0.0-rc.tgz#4180ef06dd75c9336673d734156eeec49e15b09a"
-  integrity sha512-ovOitpHYUqON0Ig8LhFfFBqmgEViV/25/l3YJilx3kFwWpIkm/ykITeSA7SAzBCt/m6hPs2n4mtdFypBziP3hg==
+babel-plugin-alias@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/babel-plugin-alias/-/babel-plugin-alias-1.2.0.tgz#5a75826c5e3af610d1a3a586cc9476c949e93d90"
+  integrity sha512-sGWyBRyp+Hd0ksM/f3mG1OmlNV5iKOh309ZJ/wXXbrtVMrnSzaGfV4gpN+WCe8GIYWCUcoRBUq9zB+06DYONKA==
 
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
