@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.4](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.3...v2.2.4) (2022-07-03)
+
+
+### Bug Fixes
+
+* exec error "Command failed: npx babel --extensions .ts,.js x --co ([5b278e8](https://github.com/drdevelop/typescript-module-alias/commit/5b278e84d40a3ade3041c163cf20f88604f621dd))
+
 ### [2.2.3](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.2...v2.2.3) (2022-07-03)
 
 
