@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.5](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.4...v2.2.5) (2022-07-03)
+
+
+### Bug Fixes
+
+* build command line output not showing ([d9ec51b](https://github.com/drdevelop/typescript-module-alias/commit/d9ec51b29dc275576e0d97660f1a049917f4d856))
+
 ### [2.2.4](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.3...v2.2.4) (2022-07-03)
 
 
