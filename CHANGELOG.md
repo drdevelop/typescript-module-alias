@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.7](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.6...v2.2.7) (2022-07-03)
+
+
+### Bug Fixes
+
+* The "path" argument must be of type string. Received undefined ([497b095](https://github.com/drdevelop/typescript-module-alias/commit/497b09558ef0e1f2e13675b1d180dc57a7d54962))
+
 ### [2.2.6](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.5...v2.2.6) (2022-07-03)
 
 
