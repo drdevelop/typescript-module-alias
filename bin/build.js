@@ -25,16 +25,14 @@ const outDir = options.outDir || 'dist';
 exec(
   `npx babel --extensions .ts,.js ${entry} --config-file ${babelConfigFilePath} --out-dir ${outDir} `,
   (error, stdout, stderr) => {
+    if (stdout) {
+      console.log(stdout);
+    }
+    if (stderr) {
+      console.log(stderr);
+    }
     if (error) {
       console.error(error.message);
-      return;
     }
-
-    if (stderr) {
-      console.error(stderr);
-      return;
-    }
-
-    console.log(stdout);
   }
 );
