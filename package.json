@@ -1,6 +1,6 @@
 {
   "name": "typescript-module-alias",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "this is module alias auto import about typescript module",
   "main": "index.js",
   "bin": {

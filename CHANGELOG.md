@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.8](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.7...v2.2.8) (2022-07-04)
+
+
+### Bug Fixes
+
+* Big data output console failed ([4f18778](https://github.com/drdevelop/typescript-module-alias/commit/4f1877889b354d02993280babba812e6d4143f89))
+
 ### [2.2.7](https://github.com/drdevelop/typescript-module-alias/compare/v2.2.6...v2.2.7) (2022-07-03)
 
 
