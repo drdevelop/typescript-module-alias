@@ -35,6 +35,8 @@ spawn(
     babelConfigFilePath,
     '--out-dir',
     outDir,
+    '--ignore',
+    'node_modules',
   ],
   {
     stdio: 'inherit',
